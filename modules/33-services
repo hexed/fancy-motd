@@ -9,9 +9,9 @@ services["Docker"]="docker"
 services["SSH"]="sshd"
 services["Fail2Ban"]="fail2ban"
 services["Gitea"]="gitea"
-services["firewalld"]="firewalld"
+services["ufw"]="ufw"
 services["MySQL"]="mysql"
-services["PHP-FPM"]="php-fpm"
+services["PHP-FPM"]="php7.4-fpm"
 
 statuses=()
 for key in "${!services[@]}"; do
